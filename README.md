@@ -2,8 +2,7 @@
 Scala Streaming Libraries Compared
 
 
-                                                              
-|                              | fs2 | ZIO Streams | Akka Streams                                               |
+|                              | FS2 | ZIO Streams | Akka Streams                                               |
 |------------------------------|-----|-------------|------------------------------------------------------------|
 | Hello World: Finite Stream   |     |             | [FiniteStreamQuickstart.scala][AkkaFiniteStreamQuickStart] |
 | Hello World: Infinite Stream |     |             |                                                            |
@@ -16,4 +15,4 @@ Scala Streaming Libraries Compared
 | Shutting Down (from Outside) |     |             |                                                            |
 
 
-[AkkaFiniteStreamQuickStart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/
+[AkkaFiniteStreamQuickStart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/FiniteStreamQuickstart.scala
