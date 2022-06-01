@@ -5,10 +5,7 @@ Scala Streaming Libraries Compared
                                                               
 |                                   | fs2 | ZIO Streams | Akka Streams |
 | --------------------------------- | --- | ----------- | ------------ |
-| Hello World: Finite Stream        
-|     
-|             
-| [FiniteStreamQuickstart.scala](https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/tree/SH01/akka-streams) |
+| Hello World: Finite Stream        |     |             | [FiniteStreamQuickstart.scala](https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/tree/SH01/akka-streams) |
 | Hello World: Infinite Stream      |     |             |              |
 | Consuming from Kafka              |     |             |              |
 | Publishing to Kafka               |     |             |              |
