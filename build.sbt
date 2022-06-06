@@ -12,6 +12,7 @@ lazy val akkaStreams = (project in file("akka-streams"))
       "com.typesafe.akka" %% "akka-actor-testkit-typed" % AkkaVersion % Test,
       "com.typesafe.akka" %% "akka-stream" % AkkaVersion,
       "com.typesafe.akka" %% "akka-stream-testkit" % AkkaVersion % Test,
+      "com.typesafe.akka" %% "akka-stream-kafka" % "3.0.0",
       "ch.qos.logback" % "logback-classic" % "1.2.11",
       "io.github.embeddedkafka" %% "embedded-kafka" % "3.2.0",
       "org.scalatest" %% "scalatest" % "3.2.12" % Test
