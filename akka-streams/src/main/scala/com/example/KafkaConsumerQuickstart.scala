@@ -22,8 +22,6 @@ object KafkaConsumerQuickstart extends App {
 
   val embeddedKafkaHelper = EmbeddedKafkaHelper(system)
 
-  val config = system.settings.config.getConfig("akka.kafka.consumer")
-
   val consumerSettings =
     ConsumerSettings(system, new StringDeserializer, new StringDeserializer)
       .withBootstrapServers("127.0.0.1:6001")
