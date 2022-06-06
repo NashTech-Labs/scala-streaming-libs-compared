@@ -14,6 +14,18 @@ lazy val akkaStreams = (project in file("akka-streams"))
       "com.typesafe.akka" %% "akka-stream-testkit" % AkkaVersion % Test,
       "ch.qos.logback" % "logback-classic" % "1.2.11",
       "io.github.embeddedkafka" %% "embedded-kafka" % "3.2.0",
-      "org.scalatest" %% "scalatest" % "3.2.12" % Test
+      "org.scalatest" %% "scalatest" % "3.2.12" % Test,
+      "com.github.fd4s" %% "fs2-kafka" % "2.5.0-M2"
+    )
+  )
+
+lazy val fs2 = (project in file("fs2"))
+  .settings(
+    fork := true,
+    libraryDependencies ++= Seq(
+      "ch.qos.logback" % "logback-classic" % "1.2.11",
+      "io.github.embeddedkafka" %% "embedded-kafka" % "3.2.0",
+      "org.scalatest" %% "scalatest" % "3.2.12" % Test,
+      "com.github.fd4s" %% "fs2-kafka" % "2.5.0-M2"
     )
   )
