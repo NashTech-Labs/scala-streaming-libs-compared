@@ -21,6 +21,8 @@ object KafkaConsumerQuickstart extends App {
   val logger: LoggingAdapter = Logging(system, "QuickStart")
 
   val embeddedKafkaHelper = EmbeddedKafkaHelper(system)
+  embeddedKafkaHelper
+    .startKafka() // Starts EmbeddedKafka, creates a topic, publishes some messages etc.
 
   val consumerSettings =
     ConsumerSettings(system, new StringDeserializer, new StringDeserializer)
