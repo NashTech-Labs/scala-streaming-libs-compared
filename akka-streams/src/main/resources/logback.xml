@@ -13,6 +13,8 @@
         <appender-ref ref="STDOUT" />
     </appender>
 
+    <logger name="org.apache.kafka" level="ERROR"/>
+
     <root level="INFO">
         <appender-ref ref="ASYNC"/>
     </root>
