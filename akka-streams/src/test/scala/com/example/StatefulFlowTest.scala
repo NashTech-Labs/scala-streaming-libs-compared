@@ -28,12 +28,12 @@ class StatefulFlowTest
       .toMat(TestSink[Int]())(Keep.both)
       .run()
 
-    sub.request(n = 3)
+    sub.request(3)
     (1 to 7 * 3).foreach { _ =>
       pub.sendNext(42)
     }
-    pub.sendComplete()
     sub.expectNext(42, 42, 42)
+    pub.sendComplete()
     sub.expectComplete()
 
   }

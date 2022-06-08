@@ -15,7 +15,7 @@ object StatefulFlow {
 
     { element =>
       counter.get(element) match {
-        case Some(value) if value == 7 =>
+        case Some(value) if value == 6 =>
           counter(element) = 0
           element :: Nil
         case Some(value) =>
