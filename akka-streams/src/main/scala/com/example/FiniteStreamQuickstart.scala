@@ -12,8 +12,8 @@ object FiniteStream {
 
 object FiniteStreamQuickstart extends App {
 
-  implicit val system: ActorSystem = ActorSystem("QuickStart")
-  val logger: LoggingAdapter = Logging(system, "QuickStart")
+  implicit val system: ActorSystem = ActorSystem("FiniteStreamQuickstart")
+  val logger: LoggingAdapter = Logging(system, "FiniteStreamQuickstart")
 
   FiniteStream.source
     .wireTap(item => logger.info(s"Got ${item}!"))

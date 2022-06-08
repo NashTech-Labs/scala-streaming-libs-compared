@@ -31,8 +31,8 @@ object StatefulFlow {
 
 object StatefulQuickstart extends App {
 
-  implicit val system: ActorSystem = ActorSystem("QuickStart")
-  val logger = Logging(system, "QuickStart")
+  implicit val system: ActorSystem = ActorSystem("StatefulQuickstart")
+  val logger = Logging(system, "StatefulQuickstart")
 
   Source
     .cycle(() => Iterator.single(Random.nextInt(100)))

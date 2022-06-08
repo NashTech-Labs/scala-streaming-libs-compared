@@ -1,6 +1,6 @@
 # scala-streaming-libs-compared
-Scala Streaming Libraries Compared
 
+Scala Streaming Libraries Compared
 
 |                                                | FS2 | ZIO Streams | Akka Streams                                                                                                          |
 |------------------------------------------------|-----|-------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -8,16 +8,26 @@ Scala Streaming Libraries Compared
 | Hello World: Infinite Stream                   |     |             | [InfiniteStreamQuickstart.scala][AkkaInfiniteStreamQuickstart] and [InfiniteStreamTest.scala][AkkaInfiniteStreamTest] |
 | Consuming from Kafka (at-least-once semantics) |     |             | [KafkaConsumerQuickstart.scala][AkkaKafkaConsumerQuickstart]                                                          |
 | Publishing to Kafka                            |     |             |                                                                                                                       |
-| Modularity                                     |     |             |                                                                                                                       |                 
+| Modularity                                     |     |             | [FlowQuickstart.scala][AkkaFlowQuickstart] and [FlowTest.scala][AkkaFlowTest]                                         |                 
 | Stateful Function                              |     |             | [StatefulQuickstart.scala][AkkaStatefulQuickstart] and [StatefulFlowTest.scala][AkkaStatefulFlowTest]                 |
 | Fan In                                         |     |             |                                                                                                                       |
 | Fan Out                                        |     |             |                                                                                                                       |
 | Shutting Down (from Outside)                   |     |             |                                                                                                                       |
 
-[AkkaInfiniteStreamQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/InfiniteStreamQuickstart.scala 
+[AkkaInfiniteStreamQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/InfiniteStreamQuickstart.scala
+
 [AkkaFiniteStreamQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/FiniteStreamQuickstart.scala
+
 [AkkaFiniteStreamTest]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/test/scala/com/example/FiniteStreamTest.scala
+
 [AkkaInfiniteStreamTest]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/test/scala/com/example/InfiniteStreamTest.scala
+
 [AkkaKafkaConsumerQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/KafkaConsumerQuickstart.scala
+
 [AkkaStatefulQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/StatefulQuickstart.scala
-[AkkaStatefulFlowTest]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/StatefulFlowTest.scala
+
+[AkkaStatefulFlowTest]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/test/scala/com/example/StatefulFlowTest.scala
+
+[AkkaFlowQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/FlowQuickstart.scala
+
+[AkkaFlowTest]:  https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/test/scala/com/example/StatefulFlowTest.scala

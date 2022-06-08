@@ -1,16 +1,15 @@
 package com.example
 
-import akka.NotUsed
 import akka.actor.ActorSystem
-import akka.stream.scaladsl.{Flow, Keep}
+import akka.stream.scaladsl.Keep
 import akka.stream.testkit.scaladsl.{TestSink, TestSource}
 import akka.testkit.TestKit
 import org.scalatest.BeforeAndAfterAll
 import org.scalatest.funsuite.AnyFunSuiteLike
 import org.scalatest.matchers.must.Matchers
 
-class StatefulFlowTest
-    extends TestKit(ActorSystem("StatefulFlowTest"))
+class FlowTest
+    extends TestKit(ActorSystem("FlowTest"))
     with AnyFunSuiteLike
     with Matchers
     with BeforeAndAfterAll {
@@ -19,22 +18,17 @@ class StatefulFlowTest
     TestKit.shutdownActorSystem(system)
   }
 
-  test("We can test the stateful flow") {
+  test("We can test the flow") {
 
-    val flowUnderTest: Flow[Int, Int, NotUsed] = StatefulFlow.flow
     val (pub, sub) = TestSource
       .probe[Int]
-      .via(flowUnderTest)
-      .toMat(TestSink[Int]())(Keep.both)
+      .via(SimpleFlow.flow)
+      .toMat(TestSink[String]())(Keep.both)
       .run()
 
-    sub.request(3)
-    (1 to 7 * 3).foreach { _ =>
-      pub.sendNext(42)
-    }
-    sub.expectNext(42, 42, 42)
-    pub.sendComplete()
-    sub.expectComplete()
+    pub.sendNext(42)
+    sub.request(1)
+    sub.expectNext("42")
 
   }
 

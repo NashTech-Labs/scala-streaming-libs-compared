@@ -16,9 +16,9 @@ import scala.concurrent.duration.DurationInt
 
 object KafkaConsumerQuickstart extends App {
 
-  implicit val system: ActorSystem = ActorSystem("QuickStart")
+  implicit val system: ActorSystem = ActorSystem("KafkaConsumerQuickstart")
   import system.dispatcher
-  val logger: LoggingAdapter = Logging(system, "QuickStart")
+  val logger: LoggingAdapter = Logging(system, "KafkaConsumerQuickstart")
 
   val embeddedKafkaHelper = EmbeddedKafkaHelper(system)
   embeddedKafkaHelper
