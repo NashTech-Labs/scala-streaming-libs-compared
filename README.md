@@ -9,7 +9,7 @@ Scala Streaming Libraries Compared
 | Consuming from Kafka (at-least-once semantics) |     |             | [KafkaConsumerQuickstart.scala][AkkaKafkaConsumerQuickstart]                                                          |
 | Publishing to Kafka                            |     |             |                                                                                                                       |
 | Modularity                                     |     |             |                                                                                                                       |                 
-| Stateful Function                              |     |             |                                                                                                                       |
+| Stateful Function                              |     |             | [StatefulQuickstart.scala][AkkaStatefulQuickstart] and [StatefulFlowTest.scala][AkkaStatefulFlowTest]                 |
 | Fan In                                         |     |             |                                                                                                                       |
 | Fan Out                                        |     |             |                                                                                                                       |
 | Shutting Down (from Outside)                   |     |             |                                                                                                                       |
@@ -19,3 +19,5 @@ Scala Streaming Libraries Compared
 [AkkaFiniteStreamTest]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/test/scala/com/example/FiniteStreamTest.scala
 [AkkaInfiniteStreamTest]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/test/scala/com/example/InfiniteStreamTest.scala
 [AkkaKafkaConsumerQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/KafkaConsumerQuickstart.scala
+[AkkaStatefulQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/StatefulQuickstart.scala
+[AkkaStatefulFlowTest]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/StatefulFlowTest.scala
