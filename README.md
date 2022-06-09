@@ -35,3 +35,5 @@ Scala Streaming Libraries Compared
 [AkkaMergeHubQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/FlowQuickstart.scala
 
 [AkkaBroadcastHubQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/FlowQuickstart.scala 
+
+[FS2-KillSwitch]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/fs2/src/main/scala/com/example/CancelableStreamQuickstart.scala 

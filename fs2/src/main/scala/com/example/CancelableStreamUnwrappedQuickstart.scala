@@ -5,7 +5,6 @@ import fs2.kafka._
 import scala.concurrent.duration._
 import cats.effect.std.Random
 import cats.effect.std.Queue
-// import cats.effect.std.
 import fs2.concurrent.Topic
 import cats.syntax.all._
 import scala.concurrent.duration._

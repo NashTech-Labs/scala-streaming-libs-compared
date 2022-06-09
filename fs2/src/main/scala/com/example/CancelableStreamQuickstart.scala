@@ -5,12 +5,14 @@ import fs2.kafka._
 import scala.concurrent.duration._
 import cats.effect.std.Random
 import cats.effect.std.Queue
-// import cats.effect.std.
 import fs2.concurrent.Topic
 import cats.syntax.all._
 import scala.concurrent.duration._
 import cats.effect.kernel.Deferred
 import cats.effect.kernel.Ref
+import cats.effect.IOApp
+import cats.effect.IO
+import cats.effect.ExitCode
 
 final class KillSwitch(cancelSignal: Ref[IO, Boolean]) {
   val kill = cancelSignal.set(true)
@@ -28,7 +30,7 @@ object KillSwitch {
   } yield new KillSwitch(r)
 }
 
-object CancelableStreamQuickstart {
+object CancelableStreamQuickstart extends IOApp {
   def cancelableProducer(rnd: Random[IO], killSwitch: KillSwitch) =
     killSwitch.attach(
       fs2.Stream
@@ -49,4 +51,7 @@ object CancelableStreamQuickstart {
     c = canceler(k).void
     _ <- IO.parSequenceN(2)(List(c, p))
   } yield ()
+
+  def run(args: List[String]) =
+    CancelableStreamQuickstart.program.as(ExitCode.Success)
 }
