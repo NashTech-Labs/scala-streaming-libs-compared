@@ -12,7 +12,7 @@ Scala Streaming Libraries Compared
 | Stateful Function                              |                                                    |             | [StatefulQuickstart.scala][AkkaStatefulQuickstart] and [StatefulFlowTest.scala][AkkaStatefulFlowTest]                 |
 | Fan In                                         |                                                    |             | [MergeHubQuickstart.scala][AkkaMergeHubQuickstart]                                                                    |
 | Fan Out                                        |                                                    |             | [BroadcastHubQuickstart.scala][AkkaBroadcastHubQuickstart]                                                            |
-| Shutting Down (from Outside)                   | [CancelableStreamQuickstart.scala][FS2KillSwitch] |             |                                                                                                                       |
+| Shutting Down (from Outside)                   | [CancelableStreamQuickstart.scala][FS2KillSwitch]  |             |                                                                                                                       |
 
 [AkkaInfiniteStreamQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/InfiniteStreamQuickstart.scala
 
