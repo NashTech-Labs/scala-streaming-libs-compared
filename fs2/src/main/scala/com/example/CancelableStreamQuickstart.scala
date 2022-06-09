@@ -12,13 +12,11 @@ import scala.concurrent.duration._
 import cats.effect.kernel.Deferred
 import cats.effect.kernel.Ref
 
-final class KillSwitch(cancelSignal: Ref[IO, Int]) {
-  val kill = cancelSignal.set(1)
+final class KillSwitch(cancelSignal: Ref[IO, Boolean]) {
+  val kill = cancelSignal.set(true)
 
   def attach[T](stream: fs2.Stream[IO, T]) = stream
-    .evalMap(item =>
-      cancelSignal.get.map(i => if (i === 0) item -> true else item -> false)
-    )
+    .evalMap(item => cancelSignal.get.map(f => (item, !f)))
     .takeThrough { case (item, f) => f }
     .map(_._1)
 
@@ -26,7 +24,7 @@ final class KillSwitch(cancelSignal: Ref[IO, Int]) {
 
 object KillSwitch {
   def apply() = for {
-    r <- Ref.of[IO, Int](0)
+    r <- Ref.of[IO, Boolean](false)
   } yield new KillSwitch(r)
 }
 
