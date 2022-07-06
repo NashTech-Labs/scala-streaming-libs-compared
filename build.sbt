@@ -30,3 +30,12 @@ lazy val fs2 = (project in file("fs2"))
       "com.github.fd4s" %% "fs2-kafka" % "2.5.0-M2"
     )
   )
+
+lazy val zio = (project in file("zio"))
+  .settings(
+    fork := true,
+    libraryDependencies ++= Seq(
+      "dev.zio" %% "zio" % "2.0.0",
+      "dev.zio" %% "zio-streams" % "2.0.0"
+    )
+  )
