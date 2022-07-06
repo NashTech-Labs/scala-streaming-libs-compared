@@ -24,7 +24,7 @@ object StatefulQuickstart extends ZIOAppDefault {
         case Some(value) => value :: Nil
         case None        => Nil
       }
-      .tap(item => ZIO.logInfo(s"Element ${item} has been since 7 times!"))
+      .tap(item => ZIO.logInfo(s"Element ${item} has been seen 7 times!"))
       .runDrain
   }
 }

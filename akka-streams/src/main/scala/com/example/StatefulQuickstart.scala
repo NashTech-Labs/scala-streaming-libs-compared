@@ -37,7 +37,7 @@ object StatefulQuickstart extends App {
   Source
     .cycle(() => Iterator.single(Random.nextInt(100)))
     .via(StatefulFlow.flow)
-    .wireTap { item => logger.info(s"Element ${item} has been since 7 times!") }
+    .wireTap { item => logger.info(s"Element ${item} has been seen 7 times!") }
     .runWith(Sink.ignore)
 
 }
