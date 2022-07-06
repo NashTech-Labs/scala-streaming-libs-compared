@@ -9,7 +9,7 @@ Scala Streaming Libraries Compared
 | Consuming from Kafka (at-least-once semantics) |                                                    |                                                               | [KafkaConsumerQuickstart.scala][AkkaKafkaConsumerQuickstart]                                                          |
 | Publishing to Kafka                            |                                                    |                                                               |                                                                                                                       |
 | Modularity                                     |                                                    |                                                               | [FlowQuickstart.scala][AkkaFlowQuickstart] and [FlowTest.scala][AkkaFlowTest]                                         |
-| Stateful Function                              |                                                    |                                                               | [StatefulQuickstart.scala][AkkaStatefulQuickstart] and [StatefulFlowTest.scala][AkkaStatefulFlowTest]                 |
+| Stateful Function                              |                                                    | [StatefulQuickstart.scala][ZIOStatefulQuickstart]             | [StatefulQuickstart.scala][AkkaStatefulQuickstart] and [StatefulFlowTest.scala][AkkaStatefulFlowTest]                 |
 | Fan In                                         |                                                    |                                                               | [MergeHubQuickstart.scala][AkkaMergeHubQuickstart]                                                                    |
 | Fan Out                                        |                                                    |                                                               | [BroadcastHubQuickstart.scala][AkkaBroadcastHubQuickstart]                                                            |
 | Shutting Down (from Outside)                   | [CancelableStreamQuickstart.scala][FS2KillSwitch]  |                                                               |                                                                                                                       |
@@ -41,6 +41,8 @@ Scala Streaming Libraries Compared
 [ZIOFiniteStreamQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/zio/src/main/scala/com/example/FiniteStreamQuickstart.scala
 
 [ZIOInfiniteStreamQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/zio/src/main/scala/com/example/InfiniteStreamQuickstart.scala
+
+[ZIOStatefulQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/zio/src/main/scala/com/example/StatefulQuickstart.scala
 
 Introduction
 ============

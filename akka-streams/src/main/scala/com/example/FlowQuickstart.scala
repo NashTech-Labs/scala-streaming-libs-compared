@@ -11,7 +11,6 @@ object SimpleFlow {
 
 }
 
-
 object FlowQuickstart extends App {
 
   implicit val system: ActorSystem = ActorSystem("FlowQuickstart")

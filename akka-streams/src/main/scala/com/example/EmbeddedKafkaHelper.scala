@@ -3,7 +3,12 @@ package com.example
 import akka.actor.ActorSystem
 import akka.event.Logging
 import io.github.embeddedkafka.EmbeddedKafka
-import org.apache.kafka.common.serialization.{Deserializer, Serializer, StringDeserializer, StringSerializer}
+import org.apache.kafka.common.serialization.{
+  Deserializer,
+  Serializer,
+  StringDeserializer,
+  StringSerializer
+}
 
 case class EmbeddedKafkaHelper(system: ActorSystem) {
 
