@@ -70,7 +70,7 @@ Some Random Thoughts and Observations
   with a legacy system and are trying to protect a slow legacy service from being overloaded by too fast a producer.
   However, the way in which backpressure is implemented in ZIO differs a little. ZIO claims to be purely pull-based and
   claims to have an implementation where, "when the sink asks for one element, then that ripples all the way back
-  through the very edges of the system" (see: ZIO Streaming Docs). Akka Streams uses what they call a "dynamic push/pull
+  through the very edges of the system" (see: [ZIO Streaming Docs](https://zio.dev/datatypes/stream/#7-back-pressure)). Akka Streams is not purely push based though and claims to use what they call a "dynamic push/pull
   model".
 
 * Akka Streams has a concept of "materialized value", and FS2 and ZIO Streams do not. Materialized value can be useful (
