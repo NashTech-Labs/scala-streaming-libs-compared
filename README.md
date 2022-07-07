@@ -82,6 +82,6 @@ member
 of the [Scala Center](https://scala.epfl.ch/) and has helped customers big and small adopt Scala and its ecosystem. 
 
 
-![Knoldus Logo](images/Knoldus-logo_220.webp?raw=true "Knoldus Logo")
+![Knoldus Logo](images/logo.png "Knoldus Logo")
 
 
