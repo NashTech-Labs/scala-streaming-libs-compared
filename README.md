@@ -60,9 +60,9 @@ Some Random Thoughts and Observations
 
 * Akka Streams has a concept of "materialized value", and FS2 and ZIO Streams do not. Materialized value can be useful (i.e., you can materialize a KillSwitch) but materialized values make the Akka Streams DSL a bit more complicated. There's a bit of a learning curve, and you have to learn how to combine materialized values from multiple operators.
 
-* One of the best places to learn about Akka Streams is Colin Breck's blog. I recommend the article "Akka Streams: A Motivating Example" if you are a confused beginner. For FS2, one great book that gives a good introduction is Functional Event-Driven Architecture, by Gabriel Volpe. It provides not only an introduction to FS2 but also an introduction to event sourcing, CQRS, and technologies such as Kafka and Pulsar.
+* One of the best places to learn about Akka Streams is Colin Breck's [blog](https://blog.colinbreck.com/). I recommend the article ["Akka Streams: A Motivating Example"](https://blog.colinbreck.com/akka-streams-a-motivating-example/) if you are a confused beginner. For FS2, one great book that gives a good introduction is [Functional Event-Driven Architecture](https://leanpub.com/feda), by Gabriel Volpe. It provides not only an introduction to FS2 but also an introduction to event sourcing, CQRS, and technologies such as Kafka and Pulsar.
 
-* For integration with external products, Akka Streams is the richest of the three libraries, since it has Alpakka.
+* For integration with external products, Akka Streams is the richest of the three libraries, since it has [Alpakka](https://doc.akka.io/docs/alpakka/current/index.html).
 
 * ZIO Streams itself is not so tough to learn, but to use it effectively you have to learn the dependency injection mechanism (ZIO Environment). It is definitely worth every minute of the time you spend doing so!
 
@@ -75,7 +75,7 @@ and we follow the [Scala Code of Conduct](https://www.scala-lang.org/conduct/).
 Credits
 =======
 
-Rohan Sircar (@rohan-sircar), Eldar Albossyn (@EldarKZ16) and Sebastian Harko (@sebastianharko) have contributed to this
+[Rohan Sircar](https://github.com/rohan-sircar), [Eldar Albossyn](https://github.com/rohan-sircar) and [Sebastian Harko](https://github.com/sebastianharko) have contributed to this
 repo, and we
 are grateful to our employer [Knoldus](https://wwww.knoldus.com/) for giving us the opportunity to spend some time on
 this. Knoldus, a consulting company, has been active in the Scala space for well over a decade and is an affiliate
