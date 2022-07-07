@@ -2,17 +2,17 @@
 
 Scala Streaming Libraries Compared
 
-|                                                | FS2                                                | ZIO Streams                                                   | Akka Streams                                                                                                          |
-|------------------------------------------------|----------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Hello World: Finite Stream                     |                                                    | [FiniteStreamQuickstart.scala][ZIOFiniteStreamQuickstart]     | [FiniteStreamQuickstart.scala][AkkaFiniteStreamQuickstart] and [FiniteStreamTest.scala][AkkaFiniteStreamTest]         |
-| Hello World: Infinite Stream                   |                                                    | [InfiniteStreamQuickstart.scala][ZIOInfiniteStreamQuickstart] | [InfiniteStreamQuickstart.scala][AkkaInfiniteStreamQuickstart] and [InfiniteStreamTest.scala][AkkaInfiniteStreamTest] |
-| Consuming from Kafka (at-least-once semantics) |                                                    |                                                               | [KafkaConsumerQuickstart.scala][AkkaKafkaConsumerQuickstart]                                                          |
-| Publishing to Kafka                            |                                                    |                                                               |                                                                                                                       |
-| Modularity                                     |                                                    |                                                               | [FlowQuickstart.scala][AkkaFlowQuickstart] and [FlowTest.scala][AkkaFlowTest]                                         |
-| Stateful Function                              |                                                    | [StatefulQuickstart.scala][ZIOStatefulQuickstart]             | [StatefulQuickstart.scala][AkkaStatefulQuickstart] and [StatefulFlowTest.scala][AkkaStatefulFlowTest]                 |
-| Fan In                                         |                                                    |                                                               | [MergeHubQuickstart.scala][AkkaMergeHubQuickstart]                                                                    |
-| Fan Out                                        |                                                    |                                                               | [BroadcastHubQuickstart.scala][AkkaBroadcastHubQuickstart]                                                            |
-| Shutting Down (from Outside)                   | [CancelableStreamQuickstart.scala][FS2KillSwitch]  |                                                               |                                                                                                                       |
+|                                                | FS2                                               | ZIO Streams                                                   | Akka Streams                                                                                                          |
+|------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| Hello World: Finite Stream                     | TODO                                              | [FiniteStreamQuickstart.scala][ZIOFiniteStreamQuickstart]     | [FiniteStreamQuickstart.scala][AkkaFiniteStreamQuickstart] and [FiniteStreamTest.scala][AkkaFiniteStreamTest]         |
+| Hello World: Infinite Stream                   | TODO                                              | [InfiniteStreamQuickstart.scala][ZIOInfiniteStreamQuickstart] | [InfiniteStreamQuickstart.scala][AkkaInfiniteStreamQuickstart] and [InfiniteStreamTest.scala][AkkaInfiniteStreamTest] |
+| Consuming from Kafka (at-least-once semantics) | TODO                                              | TODO                                                          | [KafkaConsumerQuickstart.scala][AkkaKafkaConsumerQuickstart]                                                          |
+| Publishing to Kafka                            | TODO                                              | TODO                                                          | TODO                                                                                                                  |
+| Modularity                                     | TODO                                              | TODO                                                          | [FlowQuickstart.scala][AkkaFlowQuickstart] and [FlowTest.scala][AkkaFlowTest]                                         |
+| Stateful Function                              | TODO                                              | [StatefulQuickstart.scala][ZIOStatefulQuickstart]             | [StatefulQuickstart.scala][AkkaStatefulQuickstart] and [StatefulFlowTest.scala][AkkaStatefulFlowTest]                 |
+| Fan In                                         | TODO                                              | TODO                                                          | [MergeHubQuickstart.scala][AkkaMergeHubQuickstart]                                                                    |
+| Fan Out                                        | TODO                                              | TODO                                                          | [BroadcastHubQuickstart.scala][AkkaBroadcastHubQuickstart]                                                            |
+| Shutting Down (from Outside)                   | [CancelableStreamQuickstart.scala][FS2KillSwitch] | TODO                                                          | TODO                                                                                                                  |
 
 [AkkaInfiniteStreamQuickstart]: https://gitpod.io/#https://github.com/knoldus/scala-streaming-libs-compared/blob/main/akka-streams/src/main/scala/com/example/InfiniteStreamQuickstart.scala
 
@@ -46,7 +46,6 @@ Scala Streaming Libraries Compared
 
 Introduction
 ============
-
 
 The purpose of this comparison is to help Scala engineers who are switching from one streaming library to another. (For example, you recently changed your job and the company you joined uses ZIO Streams, but you're familiar with Akka Streams and have to learn ZIO Streams fast.)
 
@@ -83,5 +82,6 @@ member
 of the [Scala Center](https://scala.epfl.ch/) and has helped customers big and small adopt Scala and its ecosystem. 
 
 
+![Knoldus Logo](images/Knoldus-logo_220.webp?raw=true "Knoldus Logo")
 
 
